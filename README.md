@@ -48,6 +48,8 @@ Main components:
    - `pytest`
 6. Run reliability summary:
    - `python -c "from src.evaluate import run_reliability_check; print(run_reliability_check())"`
+7. Run detailed test harness report:
+   - `python -m src.evaluate`
 
 ## Sample Interactions
 
@@ -68,8 +70,7 @@ Input:
 - target_energy: `0.3`
 
 Output (sample):
-- `Coffee Rain` - confidence `0.98` - "genre match, mood match, energy gap 0.08"
-- `Quiet Lantern` - confidence `0.60` - "mood match, energy gap 0.08"
+- `Quiet Lantern` - confidence `0.51` - "mood match, energy gap 0.08, tempo in range"
 
 ### Example 3 (guardrail behavior)
 Input:
@@ -96,6 +97,7 @@ Output:
   - Evaluation loop in `src/evaluate.py`
 - Example evaluation summary format:
   - `"5 out of 6 checks passed; average confidence = 0.82"`
+  - Detailed harness compares retrieval-aware vs baseline results with pass-rate delta.
 
 ## Reflection: AI Collaboration, Ethics, and Learning
 - Limitations and biases:
