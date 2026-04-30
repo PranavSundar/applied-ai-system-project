@@ -1,5 +1,12 @@
 # Applied AI System Project 4: Retrieval-Aware Music Recommender
 
+## Portfolio
+Loom Walkthrough: https://www.loom.com/share/e82b83d78f6441cdaa8f581de95febb6
+
+Reflection - What this Project says abot me as an AI engineer  
+I treat “applied AI” as an end-to-end system: not only a model or heuristic ranker, but retrieval that grounds recommendations in a controlled context, guardrails that reject bad inputs and weak outputs, and evaluation that compares the full pipeline to a baseline so improvements are measurable. I’m comfortable pairing lightweight, interpretable components with clear logging and tests, and I care about making behavior inspectable (scores, confidence, explanations) so stakeholders can trust—or appropriately doubt—the results. This project shows that I can ship a small but serious AI-adjacent product loop: design, implement, verify, and reflect on limits and misuse.
+
+
 ## Original Project (Modules 1-3)
 This project extends `ai110-module3show-musicrecommendersimulation-starter`, a small classroom recommender that ranked songs using simple feature matching.  
 The original goal was to simulate how recommendation systems use user preferences (genre, mood, energy) to score a tiny catalog and return top songs.  
